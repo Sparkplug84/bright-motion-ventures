@@ -15,5 +15,8 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist', // Default build output folder
+    rollupOptions: {
+      external: [], // Ensure `vue` is not marked as external
+    },
   },
 })
