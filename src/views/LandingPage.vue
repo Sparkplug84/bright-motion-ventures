@@ -12,7 +12,9 @@ import TheWelcome from '../components/TheWelcome.vue'
         class="absolute flex inset-0 items-center justify-center md:justify-start md:ml-[25%] text-white"
       >
         <div>
-          <p class="max-w-60 md:max-w-xl lg:max-w-2xl text-3xl md:text-3xl lg:text-5xl mb-6">
+          <p
+            class="max-w-60 md:max-w-xl lg:max-w-2xl text-3xl md:text-3xl lg:text-5xl mb-6 font-semibold"
+          >
             Driving sustainability
           </p>
           <p class="max-w-52 md:max-w-md text-2xl lg:text-3xl">
@@ -20,12 +22,12 @@ import TheWelcome from '../components/TheWelcome.vue'
           </p>
           <div class="flex flex-col md:flex-row mt-6">
             <button
-              class="h-12 w-auto px-8 bg-teal-500 rounded hover:bg-white hover:text-teal-500 mr-8 mb-4 md:mb-0"
+              class="h-12 w-52 bg-teal-500 rounded hover:bg-white hover:text-teal-500 mr-8 mb-4 md:mb-0"
             >
               Find out more
             </button>
             <button
-              class="h-12 w-auto px-8 hover:bg-teal-500 rounded bg-white text-teal-500 hover:text-white"
+              class="h-12 w-52 hover:bg-teal-500 rounded bg-white text-teal-500 hover:text-white"
             >
               Contact us
             </button>

@@ -16,8 +16,9 @@ function toggleMenu() {
 <template>
   <div class="fixed w-full h-16 flex justify-between items-center p-4 bg-transparent text-white">
     <div class="flex items-center p-2">
-      <img src="../assets/images/logo4.png" alt="" class="h-12 w-12 mr-4" />
-      <img src="../assets/images/name2.png" alt="" class="w-3/5 sm:w-2/5 md:1/5" />
+      <!-- <img src="../assets/images/logo4.png" alt="" class="h-12 w-12 mr-4" />
+      <img src="../assets/images/name2.png" alt="" class="w-3/5 sm:w-2/5 md:1/5" /> -->
+      <img src="../assets//images/Final-logo.png" alt="" class="h-20 w-auto" />
       <!-- <p>BRIGHT MOTION</p> -->
     </div>
     <div class="hidden md:block mr-4">
