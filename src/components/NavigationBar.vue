@@ -21,26 +21,26 @@ function toggleMenu() {
     <div class="hidden md:block mr-4">
       <ul class="flex space-x-8">
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'home' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'home' }"
         >
           <RouterLink to="/">Home</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'about' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'about' }"
         >
           <RouterLink to="/about">About</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'projects' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'projects' }"
         >
           <RouterLink to="/projects">Projects</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'contact' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'contact' }"
         >
           <RouterLink to="/contact">Contact</RouterLink>
         </li>
@@ -68,26 +68,26 @@ function toggleMenu() {
       </div>
       <ul class="space-y-8 text-center">
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'home' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'home' }"
         >
           <RouterLink @click="toggleMenu" to="/">Home</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'about' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'about' }"
         >
           <RouterLink @click="toggleMenu" to="/about">About</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'projects' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'projects' }"
         >
           <RouterLink @click="toggleMenu" to="/projects">Projects</RouterLink>
         </li>
         <li
-          class="hover:border-b hover:border-teal-500 hover:text-teal-400"
-          :class="{ 'border-b border-teal-500 text-teal-400': route.name === 'contact' }"
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'contact' }"
         >
           <RouterLink @click="toggleMenu" to="/contact">Contact</RouterLink>
         </li>
