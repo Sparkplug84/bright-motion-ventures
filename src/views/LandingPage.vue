@@ -97,7 +97,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-cyan-700 bg-opacity-75">
+  <div class="bg-custom-gradient">
     <!-- <TheWelcome /> -->
     <div class="relative">
       <img src="../assets/images/landing-image.png" alt="" class="h-screen w-screen object-cover" />
@@ -116,12 +116,13 @@ onUnmounted(() => {
           </p>
           <div class="flex flex-col md:flex-row mt-6">
             <button
-              class="h-12 w-52 bg-primaryColour rounded hover:bg-white hover:text-primaryColour mr-8 mb-4 md:mb-0"
+              type="button"
+              class="h-12 w-52 bg-custom-gradient rounded hover:bg-[linear-gradient(to_right,#ffffff,#e0e0e0)] hover:text-primaryColour mr-8 mb-4 md:mb-0"
             >
               Find out more
             </button>
             <button
-              class="h-12 w-52 hover:bg-primaryColour rounded bg-white text-primaryColour hover:text-white"
+              class="h-12 w-52 hover:bg-custom-gradient rounded bg-white text-primaryColour hover:text-white"
             >
               Contact us
             </button>
@@ -131,19 +132,21 @@ onUnmounted(() => {
     </div>
 
     <div>
-      <div class="relative w-full max-w-3xl mx-auto mt-20">
-        <p class="text-3xl text-center mb-12 font-semibold text-white">
+      <div class="relative w-full max-w-5xl mx-auto mt-20">
+        <p class="text-3xl text-center mb-12 font-semibold text-white mx-4">
           Empowering Communities Through Sustainability, Innovation, and Culture
         </p>
         <!-- Image Display -->
-        <div class="overflow-hidden rounded-xl shadow-lg h-52 md:h-[500px] m-4 relative bg-white">
+        <div
+          class="overflow-hidden rounded-xl shadow-lg h-60 sm:h-[400px] md:h-[600px] m-4 relative bg-white"
+        >
           <transition-group name="fade" tag="div">
             <img
               v-for="(slide, index) in slides"
               v-show="index === currentIndex"
               :key="slide.image"
               :src="slide.image"
-              class="w-full h-52 md:h-[500px] object-cover"
+              class="w-full h-60 sm:h-[400px] md:h-[600px] object-cover"
               alt="Carousel Image"
             />
           </transition-group>
@@ -162,7 +165,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Caption -->
-        <p class="text-center mt-2 font-semibold text-white">
+        <p class="text-center mt-2 font-semibold text-white lg:text-lg">
           {{ slides[currentIndex].caption }}
         </p>
 

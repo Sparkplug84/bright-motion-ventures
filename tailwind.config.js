@@ -9,6 +9,9 @@ export default {
         primaryColour: '#3ec1c9',
       },
     },
+    backgroundImage: {
+      'custom-gradient': 'linear-gradient(to bottom right,rgb(20,184,166),rgb(3,105,161))',
+    },
   },
   plugins: [],
 }

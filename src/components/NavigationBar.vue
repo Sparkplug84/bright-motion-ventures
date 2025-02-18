@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -7,14 +7,36 @@ const route = useRoute()
 const mobileMenuVisible = ref(false)
 
 function toggleMenu() {
-  console.log(route.name)
   mobileMenuVisible.value = !mobileMenuVisible.value
-  console.log('end function')
 }
+
+const scrollY = ref(0)
+
+const handleScroll = () => {
+  scrollY.value = window.scrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+// Compute opacity based on scroll
+const opacity = computed(() => Math.min(scrollY.value / 300, 1))
+
+// Fully solid background after 200px scroll
+const scrolled = computed(() => scrollY.value > 300)
 </script>
 
 <template>
-  <div class="fixed w-full h-16 flex justify-between items-center p-4 bg-transparent text-white">
+  <div
+    class="fixed w-full h-16 flex justify-between items-center p-4 text-white"
+    :class="{ 'bg-custom-gradient shadow-xl': scrolled }"
+    :style="{ backgroundColor: `rgba(20, 184, 166, ${opacity})` }"
+  >
     <div class="flex items-center p-2">
       <img src="../assets//images/Final-logo.png" alt="" class="h-20 w-auto" />
     </div>
@@ -186,5 +208,9 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
   transform-origin: bottom;
   width: 50%;
   transform: translate(30px, -11px) rotateZ(45deg);
+}
+
+nav {
+  backdrop-filter: blur(10px); /* Optional: Adds a subtle blur effect */
 }
 </style>
