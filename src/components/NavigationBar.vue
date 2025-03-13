@@ -33,14 +33,14 @@ const scrolled = computed(() => scrollY.value > 300)
 
 <template>
   <div
-    class="fixed w-full h-16 flex justify-between items-center p-4 text-white"
+    class="fixed w-full h-16 flex justify-between items-center text-white animate-fadeInDown"
     :class="{ 'bg-custom-gradient shadow-xl': scrolled }"
     :style="{ backgroundColor: `rgba(20, 184, 166, ${opacity})` }"
   >
     <div class="flex items-center p-2">
-      <img src="../assets//images/Final-logo.png" alt="" class="h-20 w-auto" />
+      <img src="../assets//images/newlogo3-removebg.png" alt="" class="h-16 w-auto" />
     </div>
-    <div class="hidden md:block mr-4">
+    <div class="hidden md:block mr-8">
       <ul class="flex space-x-8">
         <li
           class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
@@ -84,8 +84,7 @@ const scrolled = computed(() => scrollY.value > 300)
     >
       <div class="absolute left-1/2 transform -translate-x-1/2 top-20 w-60">
         <div class="flex flex-col items-center">
-          <img src="../assets/images/logo4.png" alt="" class="h-16 w-16" />
-          <img src="../assets/images/name2.png" alt="" class="" />
+          <img src="../assets/images/newlogo3-removebg.png" alt="" class="w-full" />
         </div>
       </div>
       <ul class="space-y-8 text-center">
