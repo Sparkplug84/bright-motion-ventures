@@ -20,4 +20,5 @@ export default defineConfig({
       external: [], // Ensure `vue` is not marked as external
     },
   },
+  assetsInclude: ['**/*.JPG'],
 })
