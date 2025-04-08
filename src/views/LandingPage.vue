@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, type Ref } from 'vue'
 // import TheWelcome from '../components/TheWelcome.vue'
 
 const slides = ref([
@@ -50,11 +50,11 @@ const count1 = ref(0)
 const count2 = ref(0)
 const observedElements = new Map()
 
-const countUp = (targetNumber, refValue) => {
+const countUp = (targetNumber: number, refValue: { value: number }) => {
   const duration = 1000 // 1 second
   const startTime = performance.now()
 
-  const updateCounter = (currentTime) => {
+  const updateCounter = (currentTime: number) => {
     const elapsedTime = currentTime - startTime
     if (elapsedTime < duration) {
       refValue.value = Math.floor((elapsedTime / duration) * targetNumber)
@@ -67,7 +67,11 @@ const countUp = (targetNumber, refValue) => {
   requestAnimationFrame(updateCounter)
 }
 
-const observeElement = (el, targetNumber, refValue) => {
+const observeElement = (
+  el: Element | null,
+  targetNumber: number,
+  refValue: Ref<number, number>,
+) => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -79,8 +83,12 @@ const observeElement = (el, targetNumber, refValue) => {
     },
     { threshold: 0.5 }, // Triggers when 50% of the element is visible
   )
-  observer.observe(el)
-  observedElements.set(el, observer)
+  // observer.observe(el)
+  // observedElements.set(el, observer)
+  if (el instanceof Element) {
+    observer.observe(el)
+    observedElements.set(el, observer)
+  }
 }
 
 onMounted(() => {
