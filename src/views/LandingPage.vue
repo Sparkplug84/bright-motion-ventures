@@ -97,26 +97,30 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-blue-200">
+  <div class="">
     <!-- <TheWelcome /> -->
     <div class="relative">
       <img src="../assets/images/landing-image.png" alt="" class="h-screen w-screen object-cover" />
       <div class="absolute h-screen w-screen bg-black opacity-50 top-0 left-0 h-auto"></div>
       <div
-        class="absolute flex inset-0 items-center justify-center md:justify-start md:ml-[25%] text-white"
+        class="absolute flex inset-0 items-center justify-center md:justify-start md:ml-[10%] lg:ml-[25%] text-white"
       >
-        <div class="">
+        <div class="m-8">
           <p
             class="max-w-60 md:max-w-xl lg:max-w-2xl text-3xl md:text-3xl lg:text-5xl mb-6 font-semibold opacity-0 animate-fadeInLeft animation-delay-1s"
           >
             Driving sustainability
           </p>
           <p
-            class="max-w-52 md:max-w-md text-2xl lg:text-3xl opacity-0 animate-fadeInRight animation-delay-1s"
+            class="md:max-w-xl text-2xl lg:text-3xl opacity-0 animate-fadeInRight animation-delay-1s"
           >
-            Developed with international expertise and innovation
+            <!-- Developed with international expertise and innovation -->
+            Built on global expertise and innovative thinking, our approach delivers practical,
+            sustainable solutions that empower communities and drive long-term growth.
           </p>
-          <div class="flex flex-col md:flex-row mt-6 opacity-0 animate-fadeInUp animation-delay-1s">
+          <div
+            class="flex flex-col md:flex-row mt-10 opacity-0 animate-fadeInUp animation-delay-1s"
+          >
             <button
               type="button"
               class="h-12 w-52 bg-custom-gradient rounded hover:bg-[linear-gradient(to_right,#ffffff,#e0e0e0)] hover:text-primaryColour mr-8 mb-4 md:mb-0"
@@ -135,7 +139,7 @@ onUnmounted(() => {
 
     <div>
       <div class="relative w-full max-w-5xl mx-auto mt-20">
-        <p class="text-3xl text-center mb-12 font-semibold text-white mx-4">
+        <p class="text-3xl text-center mb-12 font-semibold mx-4">
           Empowering Communities Through Sustainability, Innovation, and Culture
         </p>
         <!-- Image Display -->
@@ -167,7 +171,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Caption -->
-        <p class="text-center mt-2 font-semibold text-white lg:text-lg">
+        <p class="text-center mt-2 font-semibold lg:text-lg">
           {{ slides[currentIndex].caption }}
         </p>
 

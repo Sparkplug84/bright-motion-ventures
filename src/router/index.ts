@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
 import LandingPage from '@/views/LandingPage.vue'
 // import ProjectPage from '../views/ProjectPage.vue'
 
@@ -37,6 +35,9 @@ const router = createRouter({
       component: () => import('../views/ContactPage.vue'),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 } // scroll to top
+  },
 })
 
 export default router
