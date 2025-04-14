@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-s type-check build-only copy-404",
-    "copy-404": "cp dist/index.html dist/404.html",
+    "copy-404": "copy dist\\index.html dist\\404.html",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
