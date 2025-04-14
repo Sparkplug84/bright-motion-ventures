@@ -11,7 +11,7 @@ const route = useRoute()
 
 <template>
   <!-- class="w-full flex justify-center py-12 bg-gradient-to-r from-teal-600 to-cyan-600 text-white" -->
-  <div class="w-full flex justify-center py-12 bg-custom-gradient to-cyan-600 text-white">
+  <div class="w-full flex justify-center py-12 bg-custom-gradient to-cyan-600 text-white relative">
     <div class="flex flex-col lg:flex-row w-full xl:w-[80%] p-4 justify-between items-center">
       <div class="flex flex-col w-auto lg:w-1/2 items-center">
         <!-- <p class="text-xl font-semibold">Info</p> -->
@@ -38,6 +38,7 @@ const route = useRoute()
           </a>
         </div>
       </div>
+
       <!-- <div class="flex flex-col w-auto lg:w-1/3 items-center mt-8 lg:mt-0 relative">
         <p class="text-xl font-semibold">Contact</p>
         <div class="border-b-2 w-full mt-2"></div>
@@ -97,5 +98,6 @@ const route = useRoute()
         </ul>
       </div> -->
     </div>
+    <div class="absolute bottom-2">© 2025. All rights reserved.</div>
   </div>
 </template>
