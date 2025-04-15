@@ -1,78 +1,105 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import {
+  PresentationChartBarIcon,
+  AcademicCapIcon,
+  GlobeAltIcon,
+  BriefcaseIcon,
+  ChatBubbleLeftRightIcon,
+} from '@heroicons/vue/24/outline'
+</script>
 
 <template>
   <div>
     <div
-      class="lg:flex lg:h-screen lg:w-screen items-center"
+      class="md:flex lg:h-screen lg:w-screen items-center pt-20"
       style="background-color: rgb(214, 152, 93)"
     >
       <div
-        class="opacity-0 animate-fadeInLeft animation-delay-1s w-full lg:w-1/2 lg:w-1/3 mb-8 ml-0 sm:ml-8 pt-12"
+        class="opacity-0 animate-fadeInLeft animation-delay-1s w-full md:w-1/3 mb-8 ml-0 sm:ml-8 pt-12"
       >
-        <!-- <img src="../assets/images/Godwin6.jpg" alt="" class="hidden h-auto w-full sm:block" /> -->
-        <!-- <img src="../assets/images/Godwin7.jpg" alt="" class="sm:hidden h-auto w-full block" /> -->
         <img src="../assets/images/Godwin7.jpg" alt="" class="h-auto w-full" />
-        <!-- <p class="text-3xl text-white text-center">Co-Founder & CEO</p> -->
       </div>
-      <!-- <div
-        class="h-full w-full lg:w-1/2 lg:w-2/3 text-white flex flex-col justify-center text-bs/7 lg:text-lg"
-      > -->
       <div
-        class="h-full w-full sm:w-1/2 lg:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-1s text-bs/7 opacity-0 lg:text-lg"
+        class="h-full w-full md:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-1s text-bs/7 opacity-0 lg:text-lg"
       >
         <div
-          class="mx-8 xl:mx-40 2xl:mx-60 mb-12 bg-orange-800/30 rounded-2xl p-6 backdrop-blur-sm shadow-lg"
+          class="mx-4 xl:mx-40 2xl:mx-60 mb-12 bg-white rounded-2xl p-4 sm:p-6 backdrop-blur-sm shadow-2xl text-gray-600"
         >
-          <p class="text-3xl lg:text-5xl font-semibold mb-4 sm:text-left">
+          <p class="text-lg lg:text-3xl font-semibold mb-4 sm:text-left">
             Meet Godwin Tengey - Founder & CEO of BrightMotion
           </p>
-          <div class="text-sm md:text-base">
-            <!-- Godwin Tengey is a visionary leader and the driving force behind BrightMotion, blending
-            over a decade of strategic advisory experience with hands-on business acumen. With
-            advanced degrees from prestigious European institutions and a solid foundation from the
-            University of Ghana, Godwin has honed his expertise in global economics, comparative
-            development, and strategic management. His years in China, excelling in business
-            development and cultural fluency, reflect his global perspective and innovative mindset.
-            A proven relationship builder, he has been a mainstay in the consortium's successes
-            across Africa and beyond. With BrightMotion, Godwin envisions leveraging his extensive
-            expertise to drive Africa's sustainable local development ambitions, foster innovation
-            towards green energy, help grow investment in local manufacturing, expansion in
-            agriculture and agro-processing activities, and inspire a new generation of
-            entrepreneurs. -->
-            Godwin Tengey is the visionary leader behind BrightMotion, combining deep strategic
-            insight with hands-on business experience. Here's a snapshot of his journey:
-            <ul class="list-disc ml-4">
-              <li>
-                <b>Over a decade of strategic advisory experience</b>, blending high-level planning
-                with real-world business execution
-              </li>
-              <li>
-                <b>Academic background</b> includes advanced degrees from top European institutions
-                and the University of Ghana
-              </li>
-              <li>
-                <b>Expertise in</b> global economics, comparative development, and strategic
-                management
-              </li>
-              <li>
-                <b>International experience</b> includes several years in China, excelling in
-                business development and mastering cross-cultural engagement
-              </li>
-              <li>
-                <b>Proven track record</b> in building relationships and driving success across
-                Africa and beyond
-              </li>
-              <li>
-                <b>Core mission with BrightMotion:</b>
-                <ul class="list-disc ml-6">
-                  <li>Champion sustainable local development in Africa</li>
-                  <li>Promote innovation in green energy</li>
-                  <li>Boost investment in local manufacturing</li>
-                  <li>Expand agriculture and agro-processing sectors</li>
-                  <li>Inspire and support a new generation of African entrepreneurs</li>
-                </ul>
-              </li>
-            </ul>
+          <div class="">
+            <p class="mb-4 text-sm lg:text-base">
+              Godwin Tengey is the visionary leader behind BrightMotion, combining deep strategic
+              insight with hands-on business experience. Here's a snapshot of his journey
+            </p>
+            <div class="flex items-center h-14">
+              <div
+                class="bg-gray-200 h-full flex items-center justify-center w-8 sm:w-14 my-2 mr-2"
+              >
+                <PresentationChartBarIcon class="size-6 sm:size-8 text-grey-600 mx-1" />
+              </div>
+              <div>
+                <p class="text-sm lg:text-lg font-semibold">Over a Decade of Strategic Advisory</p>
+                <p class="text-sm">
+                  Blending high-level planning with practical business execution.
+                </p>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="flex items-center h-14">
+              <div
+                class="bg-gray-200 h-full flex items-center justify-center w-8 sm:w-14 my-2 mr-2"
+              >
+                <AcademicCapIcon class="size-6 sm:size-8 text-grey-600 mx-1" />
+              </div>
+              <div>
+                <p class="text-sm lg:text-lg font-semibold">Strong Academic Foundation</p>
+                <p class="text-sm">
+                  Advanced degrees from top European schools and the University of Ghana.
+                </p>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="flex items-center h-14">
+              <div
+                class="bg-gray-200 h-full flex items-center justify-center w-8 sm:w-14 my-2 mr-2"
+              >
+                <GlobeAltIcon class="size-6 sm:size-8 text-grey-600 mx-1" />
+              </div>
+              <div>
+                <p class="text-sm lg:text-lg font-semibold">Expertise in Key Global Disciplines</p>
+                <p class="text-sm">
+                  Specialized in economics, development, and strategic management..
+                </p>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="flex items-center h-14">
+              <div
+                class="bg-gray-200 h-full flex items-center justify-center w-8 sm:w-14 my-2 mr-2"
+              >
+                <BriefcaseIcon class="size-6 sm:size-8 text-grey-600 mx-1" />
+              </div>
+              <div>
+                <p class="text-sm lg:text-lg font-semibold">International Business Experience</p>
+                <p class="text-sm">
+                  Led successful ventures in China, mastering cross-cultural engagement.
+                </p>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="flex items-center h-14">
+              <div
+                class="bg-gray-200 h-full flex items-center justify-center w-8 sm:w-14 my-2 mr-2"
+              >
+                <ChatBubbleLeftRightIcon class="size-6 sm:size-8 text-grey-600 mx-1" />
+              </div>
+              <div>
+                <p class="text-sm lg:text-lg font-semibold">Proven Relationship Builder</p>
+                <p class="text-sm">Drives collaborative growth across Africa and beyond.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -85,20 +112,45 @@
       >
         <div class="m-8 bg-blue-500/40 rounded-2xl p-6 backdrop-blur-sm shadow-lg">
           <p
-            class="max-w-60 md:max-w-xl lg:max-w-2xl text-3xl md:text-3xl lg:text-5xl mb-6 font-semibold ml-6"
+            class="max-w-60 md:max-w-xl lg:max-w-2xl text-3xl md:text-3xl lg:text-5xl mb-6 font-semibold"
           >
             Who are we?
           </p>
-          <p class="md:max-w-xl">
-            BrightMotion Ventures, based in Ghana, collaborates with private international partners
-            from the US, China, and beyond, spanning all sectors. Our mission is to drive impactful
-            change by integrating global expertise with local opportunities, fostering socioeconomic
-            growth and cultural enrichment in Africa. We are committed to creating sustainable
-            solutions that empower communities, support innovation, and enhance the nation's
-            development. Through strategic partnerships and a passion for progress, BrightMotion
-            Ventures aims to be a transformative force in shaping Africa’s future, contributing to
-            its thriving economy and vibrant cultural heritage.
-          </p>
+          <div class="md:max-w-xl">
+            BrightMotion Ventures is a Ghana-based initiative working with global partners to drive
+            sustainable progress across Africa. Here's what we're all about:
+            <ul class="list-disc ml-4">
+              <li>
+                <b>Headquartered in Ghana</b>, with partnerships across the US, China, and other
+                global regions
+              </li>
+              <li>
+                <b>Collaborating across all sectors</b> to create inclusive and impactful growth
+              </li>
+              <li>
+                <b>Mission:</b>
+                <ul class="list-disc ml-6">
+                  <li>Socioeconomic development</li>
+                  <li>Cultural enrichment</li>
+                </ul>
+              </li>
+              <li>
+                <b>Focused on sustainable solutions </b>that:
+                <ul class="list-disc ml-6">
+                  <li>Empower communities</li>
+                  <li>Support innovation</li>
+                  <li>Strengthen national development</li>
+                </ul>
+              </li>
+              <li>
+                <b>Driven by strategic partnerships and a passion for progress</b>
+              </li>
+              <li>
+                <b>Vision:</b> To be a transformative force in shaping Africa’s future, helping
+                build a thriving economy and celebrating vibrant cultural heritage
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
