@@ -7,6 +7,7 @@ export default {
     extend: {
       animation: {
         fadeInDown: 'fade-in-down 1s ease-out',
+        fadeInDownShort: 'fade-in-down-short 1s ease-out',
         fadeInUp: 'fade-in-up 1s ease-out forwards',
         fadeInLeft: 'fade-in-left 0.8s ease-out forwards',
         fadeInRight: 'fade-in-right 0.8s ease-out forwards',
@@ -23,6 +24,16 @@ export default {
           '0%': {
             opacity: 0,
             transform: 'translate3d(0, -100%, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        'fade-in-down-short': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(0, -10%, 0)',
           },
           '100%': {
             opacity: 1,

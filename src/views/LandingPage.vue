@@ -108,8 +108,8 @@ onUnmounted(() => {
   <div class="">
     <!-- <TheWelcome /> -->
     <div class="relative">
-      <img src="../assets/images/landing-image.png" alt="" class="h-screen w-screen object-cover" />
-      <div class="absolute h-screen w-screen bg-black opacity-50 top-0 left-0 h-auto"></div>
+      <img src="../assets/images/landing-image.png" alt="" class="h-screen w-full object-cover" />
+      <div class="absolute h-screen w-full bg-black opacity-50 top-0 left-0"></div>
       <div
         class="absolute flex inset-0 items-center justify-center md:justify-start md:ml-[10%] lg:ml-[25%] text-white"
       >
@@ -202,15 +202,18 @@ onUnmounted(() => {
         alt=""
         class="h-screen w-screen object-cover"
       />
-      <div class="absolute h-screen w-screen bg-black opacity-75 top-0 left-0 h-auto"></div>
+      <div class="absolute h-screen w-full bg-black opacity-75 top-0 left-0 h-auto"></div>
       <div class="absolute flex inset-0 items-center justify-center text-white">
-        <div class="md:max-w-xl lg:max-w-4xl p-4">
-          <div class="flex flex-col lg:flex-row">
+        <div class="md:max-w-xl lg:max-w-4xl">
+          <div
+            class="flex flex-col lg:flex-row bg-blue-500/50 m-4 rounded-2xl p-6 md:p-10 backdrop-blur-sm shadow-2xl text-white"
+          >
             <div class="">
-              <p class="text-3xl mb-6 font-semibold">
-                Empowering African Economies Through Global Partnerships
+              <!-- <p class="text-3xl mb-6 font-semibold"> -->
+              <p class="text-lg lg:text-3xl font-semibold mb-4 sm:text-left">
+                Empowering African economies through global partnerships
               </p>
-              <p class="lg:text-xl">
+              <p class="">
                 BrightMotion with it's network consortium of partners is advancing renewable energy
                 projects across Africa, focusing on solar and wind power, EV, healthcare, and
                 agriculture among others. These initiatives aim to enhance energy capacity, drive
