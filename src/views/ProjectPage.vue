@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { ref } from 'vue'
 
 useHead({
   title: 'Bright Motion Ventures | Services page',
@@ -18,15 +19,221 @@ useHead({
     { property: 'og:image', content: './assets/images/landing-image-png' },
   ],
 })
+
+const industries = ref([
+  {
+    title: 'Renewable Energy & Solar Power',
+    subtitle: 'Clean power. Clear promise',
+    description:
+      'We deliver modern energy independence with scalable, reliable, and smart renewable infrastructure.',
+    items: [
+      'Supply of Tier-1 solar panels, inverters, batteries, and hybrid solutions',
+      'EV charging stations ranging from 20kW to 360kW',
+      'Full EPC (Engineering, Procurement, Construction) services for solar systems',
+      'Financing options and grid integration support',
+      'Fast installation (within 48–72 hours) with after-sales care',
+    ],
+  },
+  {
+    title: 'Agriculture & Farm Equipment',
+    subtitle: 'Modern Tools for a greener tomorrow',
+    description:
+      'We empower farmers with efficient, affordable mechanization solutions for all scales.',
+    items: [
+      'Tractors (80–160HP), trailers, harvesters, and irrigation tools',
+      'Full farm setup packages including training and support',
+      'Seeders, planters, pumps, and agri drones',
+      'Durable equipment tested for African terrains',
+      'Financing and maintenance solutions available',
+    ],
+  },
+  {
+    title: 'Healthcare Equipment & Solution',
+    subtitle: 'Building Stronger Health Systems',
+    description:
+      'We provide certified medical technology and end-to-end services for health facilities.',
+    items: [
+      'MRI, CT, Ultrasound, ICU, and lab equipment',
+      'Turnkey development for diagnostic centres and hospitals',
+      'Digital infrastructure including telemedicine platforms',
+      'Regulatory support, staff training, and installation',
+      'CE/ISO-certified equipment with aftercare packages',
+    ],
+  },
+  {
+    title: 'Engines, Generators & Power Equipment',
+    subtitle: 'Powering Productivity Across Industries',
+    description: 'We offer dependable power solutions built for resilience and performance.',
+    items: [
+      'EPA/Euro V-certified gasoline and diesel engines',
+      'Portable and high-output generators for all uses',
+      'Water and sewage pumps, pressure washers included',
+      'Fast nationwide delivery and technical support',
+      'Long warranties with spare parts availability',
+    ],
+  },
+  {
+    title: 'Mobility: Motorcycles & Tricycles',
+    subtitle: 'Smart, Affordable Transport Solutions',
+    description: 'Designed for logistics, commuting, and small businesses.',
+    items: [
+      'Electric motorcycles (CINECO series) and fuel options (Zonsen RX/RA series)',
+      'Cargo tricycles: electric, diesel, and petrol-powered',
+      'Full accessory range: helmets, tires, maintenance kits',
+      'Affordable and durable transport for urban and rural use',
+      'On-ground repair and after-sales support',
+    ],
+  },
+  {
+    title: 'Sound & Audio-Visual Technology',
+    subtitle: 'Immersive Experiences, Delivered',
+    description: 'Professional-grade AV and sound equipment for every environment.',
+    items: [
+      'PA systems, subwoofers, studio monitors, microphones',
+      'VR/AR headsets and interactive learning tools',
+      'Headphones: wireless, studio-quality, branded options',
+      'Custom solutions for schools, churches, DJs, and event spaces',
+      'OEM/global brands with training and installation services',
+    ],
+  },
+  {
+    title: 'Skincare, Sanitary & Wellness Products',
+    subtitle: 'Wellness That Works. Products You Can Trust.',
+    description: 'High-quality, certified products tailored for the African market.',
+    items: [
+      'Dermatologist-tested creams, serums, and cleansers',
+      'Sanitary pads, menstrual cups, cloth alternatives',
+      'Multivitamins, immune and hormone support supplements',
+      'Custom packaging and private label services',
+      'GMP-certified manufacturing and regulatory assistance',
+    ],
+  },
+  {
+    title: 'Engineering, Procurement & Construction (EPC)',
+    subtitle: 'End-to-End Project Delivery',
+    description: 'Full-scale EPC solutions for energy, healthcare, and agricultural projects.',
+    items: [
+      'Solar farms, hybrid energy, and wind power systems',
+      'Medical centre and hospital infrastructure setup',
+      'Agricultural mechanization and irrigation design',
+      'Equipment sourcing, installation, and commissioning',
+      'Reliable project timelines and scalable implementation',
+    ],
+  },
+  {
+    title: 'Installation & Commissioning',
+    subtitle: 'Built Right From the Start',
+    description: 'Expert installation services for all core sectors.',
+    items: [
+      'Solar systems and EV charging station setup',
+      'Healthcare equipment assembly and testing',
+      'Studio and audio-visual system installation',
+      'Farm machinery deployment and training',
+      'Safety-first, timely, and professional execution',
+    ],
+  },
+  {
+    title: 'After-Sales Support & Maintenance',
+    subtitle: 'Support That Stays With You',
+    description: 'Long-term care to keep your systems running efficiently.',
+    items: [
+      'Scheduled preventive maintenance and diagnostics',
+      'On-site repairs and replacement of key components',
+      'Upgrades and system performance tuning',
+      'Remote troubleshooting and technical advice',
+      'Reliable service network across regions',
+    ],
+  },
+  {
+    title: 'Turnkey Project Solutions',
+    subtitle: 'All-in-One, Hassle-Free Delivery',
+    description: 'We manage your project from idea to execution.',
+    items: [
+      'Complete farm setups with layout, training, and irrigation',
+      'Diagnostic centres with staffing, design, and supply',
+      'Solar projects with financing and infrastructure',
+      'Branded wellness product supply and distribution',
+      'Simplified execution with one dedicated point of contact',
+    ],
+  },
+  {
+    title: 'Custom Sourcing & Private Label Supply',
+    subtitle: 'Scale Your Brand With Confidence',
+    description: 'We help you bring products to market under your label.',
+    items: [
+      'Trusted sourcing from certified manufacturers',
+      'Private label design, packaging, and branding',
+      'Regulatory support including FDA registration',
+      'Flexible MOQs for startups and large orders',
+      'Ideal for entrepreneurs, NGOs, and retail networks',
+    ],
+  },
+  {
+    title: ' Consultation & Advisory Services',
+    subtitle: 'Expert Guidance, Tailored Solutions',
+    description: 'Strategic advice to optimize performance and impact.',
+    items: [
+      'Solar audits, system sizing, and cost projections',
+      'Farm planning for mechanization and productivity',
+      'Healthcare facility design and workflow support',
+      'AV system assessments for schools, events, and studios',
+      'Clear recommendations, better outcomes',
+    ],
+  },
+  {
+    title: 'Logistics & Delivery Coordination',
+    subtitle: 'Seamless Delivery, Every Time',
+    description: 'We ensure safe, timely, and traceable delivery.',
+    items: [
+      'Freight and customs coordination for all orders',
+      'Last-mile delivery across Ghana and West Africa',
+      'Tracking systems and delivery updates at every step',
+      'Support for bulk orders and oversized equipment',
+      'Logistics optimized for speed and efficiency',
+    ],
+  },
+  {
+    title: 'Partnership & Collaboration Opportunities',
+    subtitle: 'Let’s Build a Brighter Future Together',
+    description: 'We welcome mission-aligned partnerships across sectors.',
+    items: [
+      'Public institutions, ministries, and donor agencies',
+      'NGOs and development organizations',
+      'Real estate and infrastructure developers',
+      'Schools, universities, and health institutions',
+      'Retailers, distributors, and entrepreneurial ventures',
+    ],
+  },
+])
 </script>
 
 <template>
-  <div>
+  <div class="bg-gray-100">
     <div class="relative">
       <img src="../assets/images/landing-image.png" alt="" class="h-screen w-screen object-cover" />
       <div class="absolute h-screen w-full bg-black opacity-50 top-0 left-0 h-auto"></div>
       <div class="absolute flex inset-0 items-center justify-center text-5xl text-white">
         <p class="max-w-2xl">Projects</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full">
+      <div
+        v-for="item in industries"
+        :key="item.title"
+        class="w-3/4 bg-white m-8 rounded-xl px-4 py-8 flex shadow-xl"
+      >
+        <div class="w-1/4 flex items-center justify-center">
+          <div class="aspect-square h-full rounded-full bg-blue-300"></div>
+        </div>
+
+        <div class="w-3/4 flex flex-col justify-center">
+          <p class="text-xl font-semibold text-gray-700">{{ item.title }}</p>
+          <!-- <p>{{ item.subtitle }}</p> -->
+          <p class="">{{ item.description }}</p>
+          <div v-for="listItem in item.items" :key="listItem" class="text-sm">
+            <li>{{ listItem }}</li>
+          </div>
+        </div>
       </div>
     </div>
   </div>

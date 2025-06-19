@@ -243,11 +243,11 @@ onUnmounted(() => {
             </div>
             <div class="flex flex-row lg:flex-col lg:ml-16 lg:justify-center items-center mt-6">
               <div class="lg:mb-12 mr-6 lg:mr-0">
-                <p class="text-5xl text-cyan-700 font-bold" id="count1">{{ count1 }}+</p>
+                <p class="text-5xl text-yellow-400 font-bold" id="count1">{{ count1 }}+</p>
                 <p class="font-semibold">Global collaborations</p>
               </div>
               <div>
-                <p class="text-5xl text-cyan-700 font-bold" id="count2">{{ count2 }}+</p>
+                <p class="text-5xl text-yellow-400 font-bold" id="count2">{{ count2 }}+</p>
                 <p class="font-semibold">Global collaborations</p>
               </div>
             </div>
