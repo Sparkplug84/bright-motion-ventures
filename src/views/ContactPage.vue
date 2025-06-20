@@ -151,11 +151,11 @@ const sendEmail = () => {
 
       <!-- Content block that controls the height -->
       <div class="flex flex-col justify-center text-white text-5xl w-full px-4 py-20">
-        <p class="my-8 text-center">GET IN TOUCH</p>
+        <p class="my-12 text-center">GET IN TOUCH</p>
 
         <div class="flex flex-col items-center text-base">
           <p class="flex items-center mb-4">
-            <PhoneIcon class="size-4 mx-1 text-white" />Phone: +123 456 7890
+            <PhoneIcon class="size-4 mx-1 text-white" />Phone: +233 20 208 4468
           </p>
           <p class="flex items-center mb-4">
             <EnvelopeIcon class="size-4 mx-1 text-white" />
@@ -167,7 +167,7 @@ const sendEmail = () => {
             >
           </p>
           <p class="flex items-center">
-            <MapPinIcon class="size-4 mx-1 text-white" />Address: Somewhere in Ghana???
+            <MapPinIcon class="size-4 mx-1 text-white" />Address: Haatso, Accra, Ghana
           </p>
         </div>
 
