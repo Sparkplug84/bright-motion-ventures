@@ -63,12 +63,12 @@ onMounted(() => {
       style="background-color: rgb(214, 152, 93)"
     >
       <div
-        class="opacity-0 animate-fadeInLeft animation-delay-1s w-full md:w-1/3 mb-8 ml-0 sm:ml-8 pt-12"
+        class="opacity-0 animate-fadeInLeft animation-delay-500ms w-full md:w-1/3 mb-8 ml-0 sm:ml-8 pt-12"
       >
         <img src="../assets/images/Godwin7.jpg" alt="" class="h-auto w-full" />
       </div>
       <div
-        class="h-full w-full md:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-1s text-bs/7 opacity-0 lg:text-lg"
+        class="h-full w-full md:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-500ms text-bs/7 opacity-0 lg:text-lg"
       >
         <div
           class="mx-4 xl:mx-40 2xl:mx-60 mb-12 bg-white rounded-2xl p-4 sm:p-6 backdrop-blur-sm shadow-2xl text-gray-600"
@@ -214,7 +214,7 @@ onMounted(() => {
         <div
           ref="animatedDiv"
           :class="[
-            'h-full w-full md:w-2/3 text-white flex flex-col justify-center text-bs/7 lg:text-lg transition-opacity duration-700',
+            'h-full w-full md:w-2/3 text-white flex flex-col justify-center text-bs/7 lg:text-lg transition-opacity duration-700 mt-20',
             hasAnimated
               ? isVisible
                 ? 'animate-fadeInDownShort opacity-100'

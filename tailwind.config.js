@@ -10,10 +10,13 @@ export default {
         fadeInDownShort: 'fade-in-down-short 1s ease-out',
         fadeInUp: 'fade-in-up 1s ease-out forwards',
         fadeInLeft: 'fade-in-left 0.8s ease-out forwards',
+        fadeInLeftShort: 'fade-in-left-short 0.8s ease-out forwards',
         fadeInRight: 'fade-in-right 0.8s ease-out forwards',
+        fadeInRightShort: 'fade-in-right-short 0.8s ease-out forwards',
       },
       animationDelay: {
         '1s': '1s',
+        '500ms': '500ms',
         // Add more delays if needed
       },
       colors: {
@@ -60,10 +63,30 @@ export default {
             transform: 'translate3d(0, 0, 0)',
           },
         },
+        'fade-in-right-short': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(20%, 0, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
         'fade-in-left': {
           '0%': {
             opacity: 0,
             transform: 'translate3d(-100%, 0, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        'fade-in-left-short': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(-20%, 0, 0)',
           },
           '100%': {
             opacity: 1,

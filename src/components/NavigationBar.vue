@@ -56,9 +56,15 @@ const scrolled = computed(() => scrollY.value > 300)
         </li>
         <li
           class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
-          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'projects' }"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'products' }"
         >
-          <RouterLink to="/projects">Projects</RouterLink>
+          <RouterLink to="/products">Products</RouterLink>
+        </li>
+        <li
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'services' }"
+        >
+          <RouterLink to="/services">Services</RouterLink>
         </li>
         <li
           class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
@@ -102,9 +108,15 @@ const scrolled = computed(() => scrollY.value > 300)
         </li>
         <li
           class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
-          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'projects' }"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'products' }"
         >
-          <RouterLink @click="toggleMenu" to="/projects">Projects</RouterLink>
+          <RouterLink @click="toggleMenu" to="/products">Products</RouterLink>
+        </li>
+        <li
+          class="hover:border-b hover:border-primaryColour hover:text-primaryColour"
+          :class="{ 'border-b border-primaryColour text-primaryColour': route.name === 'services' }"
+        >
+          <RouterLink @click="toggleMenu" to="/services">Services</RouterLink>
         </li>
         <li
           class="hover:border-b hover:border-primaryColour hover:text-primaryColour"

@@ -148,15 +148,14 @@ onUnmounted(() => {
             class="flex flex-col md:flex-row mt-10 opacity-0 animate-fadeInUp animation-delay-1s"
           >
             <button
-              type="button"
               class="h-12 w-52 bg-custom-gradient rounded hover:bg-[linear-gradient(to_right,#ffffff,#e0e0e0)] hover:text-primaryColour mr-8 mb-4 md:mb-0"
             >
-              Find out more
+              <RouterLink to="/about">Find out more</RouterLink>
             </button>
             <button
               class="h-12 w-52 hover:bg-custom-gradient rounded bg-white text-primaryColour hover:text-white"
             >
-              Contact us
+              <RouterLink to="/contact">Contact us</RouterLink>
             </button>
           </div>
         </div>
@@ -243,11 +242,11 @@ onUnmounted(() => {
             </div>
             <div class="flex flex-row lg:flex-col lg:ml-16 lg:justify-center items-center mt-6">
               <div class="lg:mb-12 mr-6 lg:mr-0">
-                <p class="text-5xl text-yellow-400 font-bold" id="count1">{{ count1 }}+</p>
+                <p class="text-5xl text-yellow-200 font-bold" id="count1">{{ count1 }}+</p>
                 <p class="font-semibold">Global collaborations</p>
               </div>
               <div>
-                <p class="text-5xl text-yellow-400 font-bold" id="count2">{{ count2 }}+</p>
+                <p class="text-5xl text-yellow-200 font-bold" id="count2">{{ count2 }}+</p>
                 <p class="font-semibold">Global collaborations</p>
               </div>
             </div>
