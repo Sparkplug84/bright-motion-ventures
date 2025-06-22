@@ -5,7 +5,7 @@ import { CheckCircleIcon } from '@heroicons/vue/24/solid'
 import { reactive } from 'vue'
 
 useHead({
-  title: 'Bright Motion Ventures | Services page',
+  title: 'Bright Motion Ventures | Products page',
   meta: [
     {
       name: 'description',
@@ -129,122 +129,6 @@ const industries = reactive([
     ],
     inView: false,
   },
-  // {
-  //   title: 'Engineering, Procurement & Construction (EPC)',
-  //   subtitle: 'End-to-End Project Delivery',
-  //   description: 'Full-scale EPC solutions for energy, healthcare, and agricultural projects.',
-  //   image:
-  //     'https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-ov-engineering-procurement-and-construction-en.png',
-  //   items: [
-  //     'Solar farms, hybrid energy, and wind power systems',
-  //     'Medical centre and hospital infrastructure setup',
-  //     'Agricultural mechanization and irrigation design',
-  //     'Equipment sourcing, installation, and commissioning',
-  //     'Reliable project timelines and scalable implementation',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'Installation & Commissioning',
-  //   subtitle: 'Built Right From the Start',
-  //   description: 'Expert installation services for all core sectors.',
-  //   image: 'https://eleetpro.com/wp-content/uploads/2024/04/software-dev.jpeg',
-  //   items: [
-  //     'Solar systems and EV charging station setup',
-  //     'Healthcare equipment assembly and testing',
-  //     'Studio and audio-visual system installation',
-  //     'Farm machinery deployment and training',
-  //     'Safety-first, timely, and professional execution',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'After-Sales Support & Maintenance',
-  //   subtitle: 'Support That Stays With You',
-  //   description: 'Long-term care to keep your systems running efficiently.',
-  //   image:
-  //     'https://images.ctfassets.net/ukazlt65o6hl/57KsUVgR3aMOiJdWafCJNv/a91282a079be9253d1cab82c937bcb2a/AdobeStock_251500673_1.png',
-  //   items: [
-  //     'Scheduled preventive maintenance and diagnostics',
-  //     'On-site repairs and replacement of key components',
-  //     'Upgrades and system performance tuning',
-  //     'Remote troubleshooting and technical advice',
-  //     'Reliable service network across regions',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'Turnkey Project Solutions',
-  //   subtitle: 'All-in-One, Hassle-Free Delivery',
-  //   description: 'We manage your project from idea to execution.',
-  //   image:
-  //     'https://redwhitesky.com/wp-content/uploads/2024/07/Red-White-Sky-Turnkey-Project-Planning-1-1024x576.webp',
-  //   items: [
-  //     'Complete farm setups with layout, training, and irrigation',
-  //     'Diagnostic centres with staffing, design, and supply',
-  //     'Solar projects with financing and infrastructure',
-  //     'Branded wellness product supply and distribution',
-  //     'Simplified execution with one dedicated point of contact',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'Custom Sourcing & Private Label Supply',
-  //   subtitle: 'Scale Your Brand With Confidence',
-  //   description: 'We help you bring products to market under your label.',
-  //   image: 'https://styleritelabel.com/wp-content/uploads/2017/09/shutterstock_283092809.jpg',
-  //   items: [
-  //     'Trusted sourcing from certified manufacturers',
-  //     'Private label design, packaging, and branding',
-  //     'Regulatory support including FDA registration',
-  //     'Flexible MOQs for startups and large orders',
-  //     'Ideal for entrepreneurs, NGOs, and retail networks',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: ' Consultation & Advisory Services',
-  //   subtitle: 'Expert Guidance, Tailored Solutions',
-  //   description: 'Strategic advice to optimize performance and impact.',
-  //   image: 'https://busadvisory.com/wp-content/uploads/2023/09/business-consultancy-services.jpg',
-  //   items: [
-  //     'Solar audits, system sizing, and cost projections',
-  //     'Farm planning for mechanization and productivity',
-  //     'Healthcare facility design and workflow support',
-  //     'AV system assessments for schools, events, and studios',
-  //     'Clear recommendations, better outcomes',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'Logistics & Delivery Coordination',
-  //   subtitle: 'Seamless Delivery, Every Time',
-  //   description: 'We ensure safe, timely, and traceable delivery.',
-  //   image: 'https://navata.com/cms/wp-content/uploads/2021/09/istockphoto-1212669780-612x612-1.jpg',
-  //   items: [
-  //     'Freight and customs coordination for all orders',
-  //     'Last-mile delivery across Ghana and West Africa',
-  //     'Tracking systems and delivery updates at every step',
-  //     'Support for bulk orders and oversized equipment',
-  //     'Logistics optimized for speed and efficiency',
-  //   ],
-  //   inView: false,
-  // },
-  // {
-  //   title: 'Partnership & Collaboration Opportunities',
-  //   subtitle: 'Let’s Build a Brighter Future Together',
-  //   description: 'We welcome mission-aligned partnerships across sectors.',
-  //   image:
-  //     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5uqf6PWNGtfKJcR8fHLI4aSNhef9Kr7NU2Q&s',
-  //   items: [
-  //     'Public institutions, ministries, and donor agencies',
-  //     'NGOs and development organizations',
-  //     'Real estate and infrastructure developers',
-  //     'Schools, universities, and health institutions',
-  //     'Retailers, distributors, and entrepreneurial ventures',
-  //   ],
-  //   inView: false,
-  // },
 ])
 </script>
 
