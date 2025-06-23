@@ -198,7 +198,7 @@ onUnmounted(() => {
             <button
               class="h-12 w-52 bg-custom-gradient rounded hover:bg-[linear-gradient(to_right,#ffffff,#e0e0e0)] hover:text-primaryColour mr-8 mb-4 md:mb-0"
             >
-              <RouterLink to="/about">Find out more</RouterLink>
+              <RouterLink to="/products">Find out more</RouterLink>
             </button>
             <button
               class="h-12 w-52 hover:bg-custom-gradient rounded bg-white text-primaryColour hover:text-white"
