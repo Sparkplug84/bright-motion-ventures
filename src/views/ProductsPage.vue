@@ -24,6 +24,21 @@ useHead({
 
 const industries = reactive([
   {
+    title: 'Premium Steel & Metal Solutions',
+    subtitle: 'Strength for Every Structure',
+    description:
+      'We supply premium steel and metal products designed for construction, manufacturing, mining, and infrastructure projects.',
+    image:
+      'https://www.fedsteel.com/wp-content/uploads/2024/01/81bd9da7-2b0a-4623-9010-3fe3ea959393.webp',
+    items: [
+      'Reinforcement steel (Grade 40, Grade 60, B500B) in sizes from 8mm to 32mm for structural reinforcement',
+      'Mild steel plates and sheets (ASTM A36, S275JR, S355JR) for fabrication, tanks, and industrial frames',
+      'Structural steel products including I-beams, H-beams, channels, and angles for heavy infrastructure',
+      'Galvanized steel sheets and coils for roofing, fencing, ducting, and corrosion-resistant applications',
+      'Wire rods, binding wire, and steel pipes/tubes for scaffolding, plumbing, and industrial use',
+    ],
+  },
+  {
     title: 'Renewable Energy & Solar Power',
     subtitle: 'Clean power. Clear promise',
     description:

@@ -10,7 +10,14 @@ import {
   RocketLaunchIcon,
   BoltIcon,
   SparklesIcon,
+  TruckIcon,
+  WrenchScrewdriverIcon,
+  SunIcon,
+  HeartIcon,
+  PresentationChartLineIcon,
+  ArrowPathRoundedSquareIcon,
 } from '@heroicons/vue/24/outline'
+import { CheckCircleIcon } from '@heroicons/vue/24/solid'
 import { onMounted, ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
@@ -58,7 +65,9 @@ onMounted(() => {
 
 <template>
   <div>
-    <div
+    <!-- Original header with godwins's photo -->
+
+    <!-- <div
       class="md:flex lg:h-screen lg:w-full items-center md:pt-20"
       style="background-color: rgb(214, 152, 93)"
     >
@@ -155,14 +164,293 @@ onMounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="relative">
+      <img
+        src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg"
+        alt=""
+        class="min-h-[1100px] h-screen w-screen object-cover"
+      />
+      <div
+        class="absolute min-h-[1100px] md:h-screen w-full bg-black opacity-50 top-0 left-0 h-auto"
+      ></div>
+
+      <!-- ref="animatedDiv" :class="[ 'h-full w-full md:w-2/3 text-white flex flex-col justify-center
+      text-bs/7 lg:text-lg transition-opacity duration-700 mt-20', hasAnimated ? isVisible ?
+      'animate-fadeInDownShort opacity-100' : 'opacity-0' : 'opacity-0', ]" -->
+      <div class="absolute flex inset-0 items-center justify-center text-white">
+        <div
+          class="h-full w-full md:w-2/3 text-white flex flex-col justify-center text-bs/7 lg:text-lg transition-opacity duration-700 mt-20"
+        >
+          <div
+            class="opacity-0 animate-fadeInLeftShort animation-delay-500ms mx-4 xl:mx-40 2xl:mx-60 mb-12 bg-blue-500/30 rounded-2xl p-4 sm:p-6 backdrop-blur-sm shadow-2xl text-white"
+          >
+            <p class="text-lg lg:text-3xl font-semibold mb-4 sm:text-left">
+              ABOUT BRIGHTMOTION VENTURES
+            </p>
+            <hr class="my-2" />
+            <div class="">
+              <p class="mb-4 text-sm lg:text-base">
+                BrightMotion Ventures is a Ghanaian-led company backed by an international
+                consortium of industry experts and partners across key sectors. We deliver smart,
+                scalable, and sustainable solutions to meet the needs of West Africa’s evolving
+                markets.
+              </p>
+
+              <div class="mb-8">
+                <div class="flex items-center">
+                  <UserGroupIcon class="size-6 md:size-8 mr-2 text-primaryColour" />
+                  <p class="font-semibold">Who We Are:</p>
+                </div>
+                <hr class="my-2" />
+                <ul>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-primaryColour flex-none mt-1" />
+                    <span class="text-sm"
+                      >A strategic alliance of companies and professionals from Ghana, China, the
+                      Netherlands, and across Africa</span
+                    >
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-primaryColour flex-none mt-1" />
+                    <span class="text-sm"
+                      >Operating in trade, renewable energy, construction materials, healthcare, and
+                      agribusiness</span
+                    >
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-primaryColour flex-none mt-1" />
+                    <span class="text-sm"
+                      >Trusted supplier with strong logistics, procurement, and local market
+                      reach</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-8 mt-4">
+                <div class="flex items-center">
+                  <TruckIcon class="size-6 md:size-8 mr-2 text-purple-400" />
+                  <p class="font-semibold">What We Deliver:</p>
+                </div>
+                <hr class="my-2" />
+                <ul>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-purple-400 flex-none mt-1" />
+                    <span class="text-sm"
+                      >Premium Steel & Construction Materials – Direct sourcing and shipping to
+                      ports in Ghana</span
+                    >
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-purple-400 flex-none mt-1" />
+                    <span class="text-sm"
+                      >Solar Power Solutions – Off-grid and hybrid systems for homes, farms, and
+                      businesses</span
+                    >
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-purple-400 flex-none mt-1" />
+                    <span class="text-sm"
+                      >Health & Hygiene Products – Sanitary pads, supplements, and medical supplies
+                      tailored for local needs</span
+                    >
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-purple-400 flex-none mt-1" />
+                    <span class="text-sm"
+                      >Food Products – High-quality rice, grains, and packaged goods for mass
+                      distribution</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-8 mt-4">
+                <div class="flex items-center">
+                  <ChatBubbleLeftRightIcon class="size-6 md:size-8 mr-2 text-red-400" />
+                  <p class="font-semibold">Why Work With Us:</p>
+                </div>
+                <hr class="my-2" />
+                <ul>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-red-400 flex-none mt-1" />
+                    <span class="text-sm">Direct manufacturer access (no middlemen)</span>
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-red-400 flex-none mt-1" />
+                    <span class="text-sm">Transparent pricing and fast lead times</span>
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-red-400 flex-none mt-1" />
+                    <span class="text-sm">Deep understanding of West African markets</span>
+                  </li>
+                  <li class="flex items-start mb-2">
+                    <CheckCircleIcon class="size-4 mr-2 text-red-400 flex-none mt-1" />
+                    <span class="text-sm"
+                      >Solutions designed for impact, scale, and reliability</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--
+          Original new header 1st draft -->
+
+          <!-- <div
+            class="mx-4 xl:mx-40 2xl:mx-60 mb-12 bg-blue-500/50 rounded-2xl p-4 sm:p-6 backdrop-blur-sm shadow-2xl text-white"
+          >
+            <p class="text-lg lg:text-3xl font-semibold mb-4 sm:text-left">
+              ABOUT BRIGHTMOTION VENTURES
+            </p>
+            <hr class="my-2" />
+            <div class="">
+              <p class="mb-4 text-sm lg:text-base">
+                BrightMotion Ventures is a Ghanaian-led company backed by an international
+                consortium of industry experts and partners across key sectors. We deliver smart,
+                scalable, and sustainable solutions to meet the needs of West Africa’s evolving
+                markets.
+              </p>
+
+              <div class="mb-2">
+                <p class="font-semibold">Who We Are:</p>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <GlobeEuropeAfricaIcon class="size-6 md:size-8 mx-1 text-primaryColour" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      A strategic alliance of companies and professionals from Ghana, China, the
+                      Netherlands, and across Africa
+                    </p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <BoltIcon class="size-6 md:size-8 mx-1 text-primaryColour" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Operating in trade, renewable energy, construction materials, healthcare, and
+                      agribusiness
+                    </p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <TruckIcon class="size-6 md:size-8 mx-1 text-primaryColour" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Trusted supplier with strong logistics, procurement, and local market reach
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-2" />
+              <div class="w-full mb-2">
+                <p class="font-semibold">What We Deliver:</p>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <WrenchScrewdriverIcon class="size-6 md:size-8 mx-1 text-purple-400" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Premium Steel & Construction Materials – Direct sourcing and shipping to ports
+                      in Ghana
+                    </p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <SunIcon class="size-6 md:size-8 mx-1 text-purple-400" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Solar Power Solutions – Off-grid and hybrid systems for homes, farms, and
+                      businesses
+                    </p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <HeartIcon class="size-6 md:size-8 mx-1 text-purple-400" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Health & Hygiene Products – Sanitary pads, supplements, and medical supplies
+                      tailored for local needs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <TruckIcon class="size-6 md:size-8 mx-1 text-purple-400" />
+                  </div>
+                  <div>
+                    <p class="text-sm">
+                      Food Products – High-quality rice, grains, and packaged goods for mass
+                      distribution
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-2" />
+              <div class="mb-2">
+                <p class="font-semibold">Why Work With Us:</p>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <ArrowPathRoundedSquareIcon
+                      class="size-6 md:size-8 text-grey-600 mx-1 text-red-400"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-sm">Direct manufacturer access (no middlemen)</p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <PresentationChartLineIcon
+                      class="size-6 md:size-8 text-grey-600 mx-1 text-red-400"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-sm">Transparent pricing and fast lead times</p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <GlobeEuropeAfricaIcon
+                      class="size-6 md:size-8 text-grey-600 mx-1 text-red-400"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-sm">Deep understanding of West African markets</p>
+                  </div>
+                </div>
+                <div class="flex md:items-center">
+                  <div class="bg-gray-200 h-full flex items-center justify-center my-2 mr-2">
+                    <RocketLaunchIcon class="size-6 md:size-8 text-grey-600 mx-1 text-red-400" />
+                  </div>
+                  <div>
+                    <p class="text-sm">Solutions designed for impact, scale, and reliability</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="relative">
       <img src="../assets/images/landing-image.png" alt="" class="h-screen w-screen object-cover" />
       <div class="absolute h-screen w-full bg-black opacity-50 top-0 left-0 h-auto"></div>
 
-      <div class="absolute flex inset-0 items-center justify-center text-white">
-        <!------------------------------------- remove ---------------------------------------------------->
-        <!-- <div
+      <div class="absolute flex inset-0 items-center justify-center text-white"> -->
+    <!------------------------------------- remove ---------------------------------------------------->
+    <!-- <div
           class="flex inset-0 items-center justify-center md:justify-start md:ml-[10%] lg:ml-[25%] text-white"
         >
           <div class="m-8 bg-blue-500/40 rounded-2xl p-6 backdrop-blur-sm shadow-lg">
@@ -208,10 +496,11 @@ onMounted(() => {
             </div>
           </div>
         </div> -->
-        <!------------------------------------- remove ---------------------------------------------------->
+    <!------------------------------------- remove ---------------------------------------------------->
 
-        <!-- class="h-full w-full md:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-1s text-bs/7 opacity-0 lg:text-lg" -->
-        <div
+    <!-- class="h-full w-full md:w-2/3 text-white flex flex-col justify-center animate-fadeInRight animation-delay-1s text-bs/7 opacity-0 lg:text-lg" -->
+
+    <!-- <div
           ref="animatedDiv"
           :class="[
             'h-full w-full md:w-2/3 text-white flex flex-col justify-center text-bs/7 lg:text-lg transition-opacity duration-700 mt-20',
@@ -314,8 +603,9 @@ onMounted(() => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div> -->
+
+    <!-- </div>
+    </div> -->
   </div>
 </template>
